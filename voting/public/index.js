@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+  
   fetch('/candidates')
   .then(res => res.json())
   .then(res => {

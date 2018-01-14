@@ -8,6 +8,8 @@
   <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
   <script src="./bundle.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="./index.js"></script>
 
 </head>
 <body>
@@ -15,21 +17,21 @@
 
   </div>
   <div class="container">
-    <h1>Your International Blockchain Credit Score : 720 pt</h1>
+    <h1 class="title_score">Your International Blockchain Credit Score : 720 pt</h1>
 
     <h2 class="current_in_security_hold"> Current ETH in security hold : 6 (Borrowing max: 5) </h2>
-    <h2 class="current_eth"> Current ETH in wallet : 25
+    <h2 class="current_eth"> Current ETH in wallet : 25 </h2>
       <span >
 
             <input placeholder="ethereum address here to Widthdraw" type="text" class="form-control" id="Widthdraw_id" name="borrow_money" />
           <button type="button" class="btn btn-primary" id="voteSubmit">Widthdraw</button>
       </span>
-     </h2>
+
     <h2 class="wallet_address">your online wallet address: 0xda06ccee4d31a1ec671d4e467db17d356dd8d554</h2>
 
     <div class="table-responsive">
       <table class="table table-bordered">
-        <thead>
+        <thead class="table_of_transactions">
             <tr>
               <th colspan="4" style="text-align:center;">Transaction History</th>
             </tr>
@@ -48,13 +50,13 @@
           </tr>
 
           <tr>
-            <th class="pay_back">+ 0x3246c14ea61632674b9bd7138341699955832628f2f06bcdba6581429a89da67</th>
+            <th class="pay_back">+ 0x9cf08124ceabe4aab030f6841b045de951232acd6a31f83247a4de19fc05eea8</th>
             <th>5 ETH</th>
             <th>+10 points</th>
             <th>Jan/2/2018</th>
           </tr>
           <tr>
-            <th class="borrowed">- 0x3246c14ea61632674b9bd7138341699955832628f2f06bcdba6581429a89da67</th>
+            <th class="borrowed">- 0xc5e417f57aae1dad63475fffec0cd47099baf19051709d81b96e4f4016ef7f3e</th>
             <th>5 ETH</th>
             <th></th>
             <th>Dec/24/2017</th>
@@ -70,9 +72,9 @@
               <div class="col-lg-2">Pay Back Eth</div>
               <div class="col-lg-5">
                 <div class="input-group  input-group-sm">
-                  <input placeholder="How much ETH do you want to repay?" type="text" class="form-control" id="candidateName" name="candidateName" />
+                  <input placeholder="How much ETH do you want to repay?" type="text" class="form-control" id="payback_ammount" name="candidateName" />
                   <span class="input-group-btn">
-                    <button type="button" class="btn btn-primary" id="voteSubmit">Pay Back Currency</button>
+                    <button type="button" class="btn btn-primary" id="pay_back_currency">Pay Back Currency</button>
                   </span>
                 </div>
             </div>
@@ -86,13 +88,24 @@
             <div class="col-lg-2">Borrow Eth</div>
             <div class="col-lg-5">
             <div class="input-group  input-group-sm">
-              <input placeholder="How much ETH do you want to borrow?" type="text" class="form-control" id="candidateName" name="borrow_money" />
+              <input placeholder="How much ETH do you want to borrow?" type="text" class="form-control" id="borrow_ammount" name="borrow_money" />
               <span class="input-group-btn">
-                <button type="button" class="btn btn-primary" id="voteSubmit">Borrow Currency</button>
+                <button type="button" class="btn btn-primary" id="borrow_money">Borrow Currency</button>
               </span>
             </div>
             </div>
         </div>
+
+
+        <div class="row">
+<div class="col-lg-2">   Use your credit rating:   </div>
+        </div>
+
+
+        <span class="input-group-btn">
+          <a href="https://propy.com/" type="button" class="btn btn-warning" id="voteSubmit">Get a Mortgage for your house on propy.com!</a>
+          <a href="https://usa.visa.com/pay-with-visa/find-card/" type="button" class="btn btn-info" id="voteSubmit">Instantly get a credit card!</a>
+        </span>
 
     </div>
 
