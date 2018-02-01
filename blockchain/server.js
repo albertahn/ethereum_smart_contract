@@ -78,6 +78,6 @@ app.get('/wallet_total', function(req, res) {
   }
 });
 
-app.listen(3000, function () {
-  console.log('App ready and listening on port 3000!')
+app.listen(8088, function () {
+  console.log('App ready and listening on port 8088!')
 });

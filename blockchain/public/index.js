@@ -8,8 +8,6 @@ $(document).ready(function() {
 
        $('.current_eth').html('<h2 class="current_eth"> Current ETH in wallet : '+res.total_amount_wallet+' </h2>');
 
-
-
     }).catch(function(err) {
       // Error :(
     });//fetch
